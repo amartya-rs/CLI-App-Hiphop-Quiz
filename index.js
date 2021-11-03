@@ -60,8 +60,12 @@ var q3 = {
   question: "The ability to rap with a good sense of rhythm is called? ",
   answer: "Flow"
 };
+var q4 = {
+  question: "What's the real name of EMINEM? ",
+  answer: "Marshal Mathers"
+}
 
-var questions = [q1, q2, q3];
+var questions = [q1, q2, q3, q4];
 
 for (i=0; i<questions.length; i++) {
   quiz(questions[i].question, questions[i].answer);
@@ -85,5 +89,5 @@ for (i=0; i<highScore.length; i++) {
   console.log(highScore[i].name, highScore[i].score);
 }
 
-console.log("Send us a screenshot if you have beaten the high score.")
+console.log("Send us a screenshot, if you have beaten the high score.")
 
