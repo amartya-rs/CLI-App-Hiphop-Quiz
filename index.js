@@ -17,12 +17,12 @@ console.log("....................");
 //high score
 h1 = {
   name: "SnoopDogg",
-  score: 3
+  score: 4
 }
 
 h2 = {
   name: "Rohan",
-  score: 2
+  score: 3
 }
 var highScore = [h1, h2];
 
@@ -63,9 +63,13 @@ var q3 = {
 var q4 = {
   question: "What's the real name of EMINEM? ",
   answer: "Marshal Mathers"
-}
+};
+var q5 = {
+  question: "The American hip hop star Dr. Dre also has a popular brand of which product?",
+  answer: "Headphone"
+};
 
-var questions = [q1, q2, q3, q4];
+var questions = [q1, q2, q3, q4, q5];
 
 for (i=0; i<questions.length; i++) {
   quiz(questions[i].question, questions[i].answer);
@@ -75,7 +79,7 @@ for (i=0; i<questions.length; i++) {
 console.log("....................");
 
 //display score
-if (score == 3) {
+if (score == 5) {
   console.log("Damn! You are a true Hiphop fan" + "\n" + "Your score is: " + score);
 }
 else {
@@ -89,5 +93,5 @@ for (i=0; i<highScore.length; i++) {
   console.log(highScore[i].name, highScore[i].score);
 }
 
-console.log("Send us a screenshot, if you have beaten the high score.")
+console.log("Send us a screenshot if you have beaten the high score.")
 
